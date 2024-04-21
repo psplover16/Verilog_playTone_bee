@@ -1,0 +1,260 @@
+Simulator report for playtone
+Sat Mar 16 03:24:51 2024
+Quartus II Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------+
+; Simulator Summary                             ;
++-----------------------------+-----------------+
+; Type                        ; Value           ;
++-----------------------------+-----------------+
+; Simulation Start Time       ; 0 ps            ;
+; Simulation End Time         ; 1.0 us          ;
+; Simulation Netlist Size     ; 63 nodes        ;
+; Simulation Coverage         ;      41.94 %    ;
+; Total Number of Transitions ; 914             ;
+; Simulation Breakpoints      ; 0               ;
+; Family                      ; MAX3000A        ;
+; Device                      ; EPM3064ALC44-10 ;
++-----------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      41.94 % ;
+; Total nodes checked                                 ; 63           ;
+; Total output ports checked                          ; 62           ;
+; Total output ports with complete 1/0-value coverage ; 26           ;
+; Total output ports with no 1/0-value coverage       ; 36           ;
+; Total output ports with no 1-value coverage         ; 36           ;
+; Total output ports with no 0-value coverage         ; 36           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                    ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                     ; Output Port Type ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; |playtone|state_Type[1]                                                              ; |playtone|state_Type[1]                                                              ; dataout          ;
+; |playtone|state_Type[2]                                                              ; |playtone|state_Type[2]                                                              ; dataout          ;
+; |playtone|state_Type[4]                                                              ; |playtone|state_Type[4]                                                              ; dataout          ;
+; |playtone|count_Voice[1]                                                             ; |playtone|count_Voice[1]                                                             ; dataout          ;
+; |playtone|state_Type[0]                                                              ; |playtone|state_Type[0]                                                              ; dataout          ;
+; |playtone|zz~reg0                                                                    ; |playtone|zz~reg0                                                                    ; dataout          ;
+; |playtone|state_Type[3]                                                              ; |playtone|state_Type[3]                                                              ; dataout          ;
+; |playtone|HL[0]~reg0                                                                 ; |playtone|HL[0]~reg0                                                                 ; dataout          ;
+; |playtone|mode[0]~reg0                                                               ; |playtone|mode[0]~reg0                                                               ; dataout          ;
+; |playtone|HL[1]~reg0                                                                 ; |playtone|HL[1]~reg0                                                                 ; dataout          ;
+; |playtone|mode[1]~reg0                                                               ; |playtone|mode[1]~reg0                                                               ; dataout          ;
+; |playtone|mode[2]~reg0                                                               ; |playtone|mode[2]~reg0                                                               ; dataout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[0]~121 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[0]~121 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[0]~126 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[0]~126 ; pexpout          ;
+; |playtone|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|sout_node[2]~58     ; |playtone|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|sout_node[2]~58     ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[1]~135 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[1]~135 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~142 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[6]~142 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~151 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[7]~151 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~160 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~160 ; pexpout          ;
+; |playtone|clk                                                                        ; |playtone|clk~corein                                                                 ; dataout          ;
+; |playtone|zz                                                                         ; |playtone|zz                                                                         ; padio            ;
+; |playtone|HL[0]                                                                      ; |playtone|HL[0]                                                                      ; padio            ;
+; |playtone|mode[0]                                                                    ; |playtone|mode[0]                                                                    ; padio            ;
+; |playtone|HL[1]                                                                      ; |playtone|HL[1]                                                                      ; padio            ;
+; |playtone|mode[1]                                                                    ; |playtone|mode[1]                                                                    ; padio            ;
+; |playtone|mode[2]                                                                    ; |playtone|mode[2]                                                                    ; padio            ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                     ; Output Port Type ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; |playtone|count_Voice[8]                                                             ; |playtone|count_Voice[8]                                                             ; dataout          ;
+; |playtone|count_Voice[4]                                                             ; |playtone|count_Voice[4]                                                             ; dataout          ;
+; |playtone|count_Voice[9]                                                             ; |playtone|count_Voice[9]                                                             ; dataout          ;
+; |playtone|count_Voice[5]                                                             ; |playtone|count_Voice[5]                                                             ; dataout          ;
+; |playtone|count_Voice[2]                                                             ; |playtone|count_Voice[2]                                                             ; dataout          ;
+; |playtone|count_Voice[3]                                                             ; |playtone|count_Voice[3]                                                             ; dataout          ;
+; |playtone|count_Voice[6]                                                             ; |playtone|count_Voice[6]                                                             ; dataout          ;
+; |playtone|count_Voice[7]                                                             ; |playtone|count_Voice[7]                                                             ; dataout          ;
+; |playtone|count_Voice[10]                                                            ; |playtone|count_Voice[10]                                                            ; dataout          ;
+; |playtone|count_Voice[11]                                                            ; |playtone|count_Voice[11]                                                            ; dataout          ;
+; |playtone|count_Voice[12]                                                            ; |playtone|count_Voice[12]                                                            ; dataout          ;
+; |playtone|count_Voice[13]                                                            ; |playtone|count_Voice[13]                                                            ; dataout          ;
+; |playtone|count_Voice[14]                                                            ; |playtone|count_Voice[14]                                                            ; dataout          ;
+; |playtone|count_Voice[15]                                                            ; |playtone|count_Voice[15]                                                            ; dataout          ;
+; |playtone|count_Voice[16]                                                            ; |playtone|count_Voice[16]                                                            ; dataout          ;
+; |playtone|count_Voice[17]                                                            ; |playtone|count_Voice[17]                                                            ; dataout          ;
+; |playtone|count_Voice[18]                                                            ; |playtone|count_Voice[18]                                                            ; dataout          ;
+; |playtone|count_Voice[19]                                                            ; |playtone|count_Voice[19]                                                            ; dataout          ;
+; |playtone|count_Voice[20]                                                            ; |playtone|count_Voice[20]                                                            ; dataout          ;
+; |playtone|count_Voice[21]                                                            ; |playtone|count_Voice[21]                                                            ; dataout          ;
+; |playtone|count_Voice[22]                                                            ; |playtone|count_Voice[22]                                                            ; dataout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~123 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~123 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~140 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~140 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~142 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~142 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~128 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~128 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~157 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~157 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~176 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~176 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~180 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~180 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~197 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~197 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~202 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~202 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~220 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~220 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~226 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~226 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[6]~238 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[6]~238 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[7]~248 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[7]~248 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[0]~93  ; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[0]~93  ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[1]~100 ; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[1]~100 ; pexpout          ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                     ; Output Port Type ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+; |playtone|count_Voice[8]                                                             ; |playtone|count_Voice[8]                                                             ; dataout          ;
+; |playtone|count_Voice[4]                                                             ; |playtone|count_Voice[4]                                                             ; dataout          ;
+; |playtone|count_Voice[9]                                                             ; |playtone|count_Voice[9]                                                             ; dataout          ;
+; |playtone|count_Voice[5]                                                             ; |playtone|count_Voice[5]                                                             ; dataout          ;
+; |playtone|count_Voice[2]                                                             ; |playtone|count_Voice[2]                                                             ; dataout          ;
+; |playtone|count_Voice[3]                                                             ; |playtone|count_Voice[3]                                                             ; dataout          ;
+; |playtone|count_Voice[6]                                                             ; |playtone|count_Voice[6]                                                             ; dataout          ;
+; |playtone|count_Voice[7]                                                             ; |playtone|count_Voice[7]                                                             ; dataout          ;
+; |playtone|count_Voice[10]                                                            ; |playtone|count_Voice[10]                                                            ; dataout          ;
+; |playtone|count_Voice[11]                                                            ; |playtone|count_Voice[11]                                                            ; dataout          ;
+; |playtone|count_Voice[12]                                                            ; |playtone|count_Voice[12]                                                            ; dataout          ;
+; |playtone|count_Voice[13]                                                            ; |playtone|count_Voice[13]                                                            ; dataout          ;
+; |playtone|count_Voice[14]                                                            ; |playtone|count_Voice[14]                                                            ; dataout          ;
+; |playtone|count_Voice[15]                                                            ; |playtone|count_Voice[15]                                                            ; dataout          ;
+; |playtone|count_Voice[16]                                                            ; |playtone|count_Voice[16]                                                            ; dataout          ;
+; |playtone|count_Voice[17]                                                            ; |playtone|count_Voice[17]                                                            ; dataout          ;
+; |playtone|count_Voice[18]                                                            ; |playtone|count_Voice[18]                                                            ; dataout          ;
+; |playtone|count_Voice[19]                                                            ; |playtone|count_Voice[19]                                                            ; dataout          ;
+; |playtone|count_Voice[20]                                                            ; |playtone|count_Voice[20]                                                            ; dataout          ;
+; |playtone|count_Voice[21]                                                            ; |playtone|count_Voice[21]                                                            ; dataout          ;
+; |playtone|count_Voice[22]                                                            ; |playtone|count_Voice[22]                                                            ; dataout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~123 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[4]~123 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~140 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~140 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~142 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[1]~142 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~128 ; |playtone|lpm_add_sub:Add1|addcore:adder[0]|a_csnbuffer:result_node|sout_node[5]~128 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~157 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[2]~157 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~176 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~176 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~180 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[3]~180 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~197 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~197 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~202 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[4]~202 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~220 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~220 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~226 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[5]~226 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[6]~238 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[6]~238 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[7]~248 ; |playtone|lpm_add_sub:Add1|addcore:adder[1]|a_csnbuffer:result_node|sout_node[7]~248 ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[0]~93  ; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[0]~93  ; pexpout          ;
+; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[1]~100 ; |playtone|lpm_add_sub:Add1|addcore:adder[2]|a_csnbuffer:result_node|sout_node[1]~100 ; pexpout          ;
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Mar 16 03:24:50 2024
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off playtone -c playtone
+Info: Using vector source file "C:/Users/Gary/OneDrive/орн▒/Verilog/PWM/playtone/playtone.vwf"
+Warning: Compiler packed, optimized or synthesized away node "mode[3]". Ignored vector source file node.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      41.94 %
+Info: Number of transitions in simulation is 914
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Sat Mar 16 03:24:51 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

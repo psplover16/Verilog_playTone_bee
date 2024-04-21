@@ -1,0 +1,45 @@
+|playtone
+clk => count_Voice[0].CLK
+clk => count_Voice[1].CLK
+clk => count_Voice[2].CLK
+clk => count_Voice[3].CLK
+clk => count_Voice[4].CLK
+clk => count_Voice[5].CLK
+clk => count_Voice[6].CLK
+clk => count_Voice[7].CLK
+clk => count_Voice[8].CLK
+clk => count_Voice[9].CLK
+clk => count_Voice[10].CLK
+clk => count_Voice[11].CLK
+clk => count_Voice[12].CLK
+clk => count_Voice[13].CLK
+clk => count_Voice[14].CLK
+clk => count_Voice[15].CLK
+clk => count_Voice[16].CLK
+clk => count_Voice[17].CLK
+clk => count_Voice[18].CLK
+clk => count_Voice[19].CLK
+clk => count_Voice[20].CLK
+clk => count_Voice[21].CLK
+clk => HL[0]~reg0.CLK
+clk => HL[1]~reg0.CLK
+clk => mode[0]~reg0.CLK
+clk => mode[1]~reg0.CLK
+clk => mode[2]~reg0.CLK
+clk => needDelay.CLK
+clk => state_Type[0].CLK
+clk => state_Type[1].CLK
+clk => state_Type[2].CLK
+clk => state_Type[3].CLK
+clk => state_Type[4].CLK
+clk => state_Type[5].CLK
+clk => state_Type[6].CLK
+clk => state_Type[7].CLK
+clk => state_Type[8].CLK
+mode[0] <= mode[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mode[1] <= mode[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mode[2] <= mode[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HL[0] <= HL[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+HL[1] <= HL[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
